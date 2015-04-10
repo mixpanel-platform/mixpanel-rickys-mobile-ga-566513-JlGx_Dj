@@ -82,7 +82,7 @@
                 var level = query[levels]
                 
                 _.each(_.keys(level), function(properties){
-                  if (typeof output[properties] == 'undefined') {
+                  if (!output[properties]) {
                     output[properties] = {}
                   }
                   var property = level[properties]
